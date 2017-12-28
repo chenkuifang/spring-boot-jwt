@@ -15,6 +15,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 /**
  * @Description: Jwt工具类token包括：1. header (base64后的,一般做声明作用)2.payload (base64后的)
  *               3.secret(第三部分是签证，包含私钥，必须保存在服务器)
+ *               http://blog.csdn.net/a82793510/article/details/53509427
  * @author QuiFar
  * @date 2017年9月26日 下午6:05:10
  * @version V1.0
@@ -58,7 +59,7 @@ public class JwtUtil {
 	 * @param audience
 	 *            接收jwt者
 	 * @param issuer
-	 *            签发者
+	 *            签发者(如：http://phonepn.com)
 	 * @param ttlMillis
 	 *            过期时间
 	 * @param base64Security
