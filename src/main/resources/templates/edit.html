@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{index.css}" />
+<script th:href="@{index.js}"></script>
+</head>
+<body>
+	<form th:action="@{/add}">
+		<a th:href="@{/}">列表</a>
+		<fieldset>
+
+			<div>
+				<label>Name: </label> <input type="text" id="name" name="name" />
+				<label>PassWord: </label> <input type="text" id="pwd" name="pwd" />
+			</div>
+			<br />
+			<button type="submit">提交</button>
+
+		</fieldset>
+
+	</form>
+</body>
+</html>
